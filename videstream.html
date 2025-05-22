@@ -1,0 +1,88 @@
+//videostream.html
+//by Alex Gaming Studios™
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video von Fabian & Alex</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .video-player {
+            width: 100%;
+            height: auto;
+            background-color: #000;
+        }
+
+        .video-title {
+            font-size: 24px;
+            margin-top: 15px;
+        }
+
+        .creator {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-top: 10px;
+        }
+
+        .creator-name {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .verified-icon {
+            width: 20px;
+            height: 20px;
+            margin-left: 8px;
+        }
+
+        .video-description a {
+            color: #4fc3f7;
+            text-decoration: none;
+        }
+
+        .video-description a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Video Player -->
+        <video class="video-player" controls>
+            <source src="video.mp4" type="video/mp4">
+            Dein Browser unterstützt das Video-Tag nicht.
+        </video>
+
+        <!-- Video Titel -->
+        <div class="video-title">Ein großartiges Video</div>
+
+        <!-- Creator Info -->
+        <div class="creator">
+            <div style="display: flex; align-items: center;">
+                <div class="creator-name">Fabian & Alex</div>
+                <img src="verified.png" alt="Verifiziert" class="verified-icon">
+            </div>
+            <div class="video-description">
+                <p>Wir (Fabian & Alex) reagieren auf 
+                <a href="https://www.youtube.com/watch?v=sLngL5HJ3k4" target="_blank">
+                    „Ich teste NEUE Influencer Produkte“
+                </a> von Laserluca – viel Spaß beim Zuschauen!</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
